@@ -9,6 +9,8 @@ const questionManager = new QuestionManager();
 const hearManager = new HearManager();
 const { lig2 } = require('talisman/metrics/lig');
 var port = process.env.PORT || 8080;
+var server=app.listen(port,function() {
+console.log("app running on port 8080"); });
 
 const counselors = require("./database/counselors.json");
 const users = require("./database/users.json");
