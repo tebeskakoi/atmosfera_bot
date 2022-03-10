@@ -1,0 +1,31 @@
+{
+  "name": "atmosfera_bot",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
+  "description": "",
+  "main": "bot.js",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "fs": "^0.0.1-security",
+    "match": "^1.2.10",
+    "talisman": "^1.1.4",
+    "vk-io": "^4.4.0",
+    "vk-io-question": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tebeskakoi/atmosfera_bot.git"
+  },
+  "author": "tebe_s_kakoi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tebeskakoi/atmosfera_bot/issues"
+  },
+  "homepage": "https://github.com/tebeskakoi/atmosfera_bot#readme"
+}
