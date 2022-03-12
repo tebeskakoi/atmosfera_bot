@@ -1,8 +1,8 @@
 const { VK, Keyboard } = require('vk-io');
 const { HearManager } = require('@vk-io/hear');
 const { QuestionManager } = require('vk-io-question');
-const express = require('express');
-const app = express();
+//const express = require('express');
+//const app = express();
 const fs = require("fs");
 const vk = new VK({
 	token: '8f2abf7fe250528f52490c14beeaacd9cdcedb69acd4201738d7bb1839eb8add84b55336248c9b2dda373'
@@ -10,9 +10,10 @@ const vk = new VK({
 const questionManager = new QuestionManager();
 const hearManager = new HearManager();
 const { lig2 } = require('talisman/metrics/lig');
+//app.listen(3000, () => console.log('Hello, word!'));
+
 const counselors = require("./database/counselors.json");
 const users = require("./database/users.json");
-app.listen(3000, () => {
 
 setInterval(() => {
 	fs.writeFileSync("./database/counselors.json", JSON.stringify(counselors, null, "\t"));
@@ -148,5 +149,3 @@ async function run() {
 	console.log('«Атмосфера бот» успешно запущен и готов к использованию.');
 }
 run().catch(console.error);
-
-});
