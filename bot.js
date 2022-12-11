@@ -5,7 +5,7 @@ const { QuestionManager } = require('vk-io-question');
 //const app = express();
 const fs = require("fs");
 const vk = new VK({
-	token: '8f2abf7fe250528f52490c14beeaacd9cdcedb69acd4201738d7bb1839eb8add84b55336248c9b2dda373'
+	token: ''
 });
 const questionManager = new QuestionManager();
 const hearManager = new HearManager();
